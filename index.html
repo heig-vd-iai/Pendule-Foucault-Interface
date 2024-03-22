@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="dist/uPlot.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@3.5.10/dist/vuetify.min.css">
+  <link rel="stylesheet" href="theme.css">
+  <script src="dist/uPlot.iife.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module">
+    window.$docsify = {
+      name: 'Pendule',
+      loadSidebar: true,
+      auto2top: true,
+      repo: '',
+      vueComponents: {
+      },
+      vueMounts: {
+        '#counter': {
+          data() {
+            return {
+              count: 0,
+            };
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .sidebar{
+      width: 180px;
+    }
+  </style>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/vuetify@3.5.10/dist/vuetify.min.js"></script>
+</body>
+
+</html>
