@@ -1,8 +1,12 @@
 # Donnée du pendule 
 
 <v-app id="data">
+  La position de la sphère du pendule est mesurée à l'aide d'une caméra située à proximité du mécanisme d'entretien. On peut voir sur le graphique ci-dessous la position de la sphère en temps réel.
   <div id="position_chart"></div>
-  <video src="http://10.190.179.14/axis-cgi/media.cgi"></video>
+  Le mouvement permettant de maintenir l'oscillation du pendule est fourni par le mécanisme d'entretien. On peut voir une vidéo en direct du mécanisme d'entretien ci-dessous ainsi qu'un graphique représentant son mouvement.
+  <img
+          src="http://10.190.177.147:8060/axis-cgi/mjpg/video.cgi"></img>
+
   <div id="excitation_chart"></div>
 </v-app>
 

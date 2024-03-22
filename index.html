@@ -6,12 +6,17 @@
   <title>Document</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <link rel="stylesheet" href="dist/uPlot.min.css">
+  <link rel="stylesheet" href="/dist/uPlot.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@3.5.10/dist/vuetify.min.css">
   <link rel="stylesheet" href="theme.css">
+  <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+  <!-- CDN files for docsify-katex -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/marked@4"></script>
   <script src="dist/uPlot.iife.js"></script>
 </head>
 
@@ -20,7 +25,8 @@
   <script type="module">
     window.$docsify = {
       name: 'Pendule',
-      loadSidebar: true,
+      loadNavbar: true,
+      hideSidebar: true,
       auto2top: true,
       repo: '',
       vueComponents: {

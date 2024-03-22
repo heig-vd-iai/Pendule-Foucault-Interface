@@ -39,54 +39,46 @@ Néanmoins, c'est la seconde méthode qui a été retenue pour l'entretien du pe
 
 On peut montrer que l'équation du mouvement d'un pendule est amorti par un frottement de type visqieux :
 
-$$
-F_f = -c_f v
-$$
+![](https://math.now.sh?from=F_f=-c_fv)
 
 L'équation de mouvement du pendule s'écrit alors :
 
-$$
-\ddot{\theta} + 2\gamma \dot{\theta} + \omega_0^2 \left[
-    1 - \alpha \left(\frac{\omega_e}{\omega_0}\right)^2 \cos(\omega_e t) -
-    2\frac{\gamma}{\omega_0} \alpha \frac{\omega_e}{\omega_o} \sin(\omega_e t)
-\right] \sin \theta = 0
-$$
+![](https://math.now.sh?from=\ddot{\theta}+2\gamma\dot{\theta}+\omega_0^2\left[1-\alpha\left(\frac{\omega_e}{\omega_0}\right)^2\cos(\omega_et)\right]\theta=0)
 
 où :
 
-- $\alpha = s_0 / L$ est le rapport entre la distance de levage et la longueur du fil
-- $\gamma = c_f / 2m$ est le coefficient d'amortissement
-- $\omega_0 = \sqrt{g / L}$ est la pulsation propre du pendule
+- ![](https://math.now.sh?from=\alpha=s_0/L) est le rapport entre la distance de levage et la longueur du fil
+- ![](https://math.now.sh?from=\gamma=c_f/2m)
+ est le coefficient d'amortissement
+- ![](https://math.now.sh?from=\omega_0=\sqrt{g/L})
+ est la pulsation propre du pendule
 
-En supposant un amortissement faible ($\gamma \ll \omega_0$), une légère excitation ($\alpha \ll 1$) et de petites oscillations ($\sin \theta \approx \theta$), on peut simplifier l'équation du mouvement :
+En supposant un amortissement faible (![](https://math.now.sh?from=\gamma\ll\omega_0)
+), une légère excitation (![](https://math.now.sh?from=\alpha\ll1)
+) et de petites oscillations (![](https://math.now.sh?from=\sin\theta\approx\theta)
+), on peut simplifier l'équation du mouvement :
 
-$$
-\ddot{\theta} + 2\gamma \dot{\theta} + \omega_0^2 \left[
-    1 - \alpha \left(\frac{\omega_e}{\omega_0}\right)^2 \cos(\omega_e t)
-    \right] \theta = 0
-$$
+![](https://math.now.sh?from=\ddot{\theta}+2\gamma\dot{\theta}+\omega_0^2\left[1-\alpha\left(\frac{\omega_e}{\omega_0}\right)^2\cos(\omega_et)\right]\theta=0)
+
 
 En l'absence d'amortissement, l'équation ci-dessus devient l'équation de Mathieu:
 
-$$
-\ddot{\theta} + \omega_0^2 \left[
-    1 - \alpha \left(\frac{\omega_e}{\omega_0}\right)^2 \cos(\omega_e t)
-    \right] \theta = 0
-$$
+![](https://math.now.sh?from=\ddot{\theta}+\omega_0^2\left[1-\alpha\left(\frac{\omega_e}{\omega_0}\right)^2\cos(\omega_et)\right]\theta=0)
 
-Cette équation abondamment étudiée dans la littérature possède des solutions de différents types. En particulier, on peut montrer que pour certaines valeurs de $\omega_e$ et $\alpha$, l'amplitude des oscillations du pendule peut croître de manière exponentielle. C'est ce qu'on appelle l'effet de résonance. Hors de ces domaines de résonance, l'amplitude des oscillations la solution est stable, donc temporellement décroissante et pratiquement inintéressante ici.
+
+Cette équation abondamment étudiée dans la littérature possède des solutions de différents types. En particulier, on peut montrer que pour certaines valeurs de ![](https://math.now.sh?from=\omega_e)
+ et ![](https://math.now.sh?from=\alpha)
+, l'amplitude des oscillations du pendule peut croître de manière exponentielle. C'est ce qu'on appelle l'effet de résonance. Hors de ces domaines de résonance, l'amplitude des oscillations la solution est stable, donc temporellement décroissante et pratiquement inintéressante ici.
 
 Pratiquement afin de profiter au maximum de l'amplification paramétrique et limiter l'aspect généralement chaotique du mouvement qu'elle engendre, on asserit la pulsation de l'excitation à celle du pendule en prenant :
 
-$$
-\omega_e = 2\omega_0
-$$
+![](https://math.now.sh?from=\omega_e=2\omega_0)
+
 
 et on choisira :
 
-$$
-\alpha = \frac{s_0}{L} > \frac{\gamma}{\omega_0}
-$$
+![](https://math.now.sh?from=\alpha=\frac{s_0}{L}>\frac{\gamma}{\omega_0})
+
 
 ## Spécification du pendule de la HEIG-VD <!-- {docsify-ignore} -->
 
@@ -102,21 +94,18 @@ $$
 
 La pulsation propre du pendule est donnée par :
 
-$$
-\omega_0 = \sqrt{\frac{g}{L}} = 0.7 \text{Hz}
-$$
+![](https://math.now.sh?from=\omega_0=\sqrt{\frac{g}{L}}=0.7\text{Hz})
+
 
 Avec une période de :
 
-$$
-T_0 = \frac{2\pi}{\omega_0} = 9 \text{s}
-$$
+![](https://math.now.sh?from=T_0=\frac{2\pi}{\omega_0}=9\text{s})
+
 
 La précession du pendule est donnée par :
 
-$$
-\Omega_F = \Omega_T \sin\theta_L = 10.96 \text{deg/h}
-$$
+![](https://math.now.sh?from=\Omega_F=\Omega_T\sin\theta_L=10.96\text{deg/h})
+
 
 
 ## Quelques photos <!-- {docsify-ignore} -->

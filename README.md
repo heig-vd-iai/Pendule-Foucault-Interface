@@ -30,57 +30,44 @@ Il ne semblerait pas que Léon Foucault ait été informé des travaux de Gaspar
 
 Sans tenir compte de la rotation de la Terre par rapport à un référentiel galiléen et dans le cas de petites oscillations, on peut écrire l'équation du mouvement du pendule de Foucault sous la forme d'un pendule simple:
 
-$$
-\left\{
-\begin{array}{l}
-\ddot{x} = -\omega^2 x \\
-\ddot{y} = -\omega^2 y
-\end{array}
-\right.
-$$
+![](https://math.now.sh?from=%5Cleft%5C%7B%5Cbegin%7Barray%7D%7Bl%7D%5Cddot%7Bx%7D=-%5Comega%5E2x%5C%5C%5Cddot%7By%7D=-%5Comega%5E2y%5Cend%7Barray%7D%5Cright.%0A)
 
-où $\omega$ est la pulsation propre du pendule exprimée comme :
 
-$$
-\omega = \sqrt{\frac{g}{L}}
-$$
+où ![](https://math.now.sh?from=\omega)
+ est la pulsation propre du pendule exprimée comme :
 
-avec $g$ l'accélération de la pesanteur et $L$ la longueur du fil. On observe donc que la masse du pendule n'influence pas la période d'oscillation.
+![](https://math.now.sh?from=\omega=\sqrt{\frac{g}{L}})
 
-Une solution de ce système d'équations pour l'instant initial $t=0$, lorsque le pendule passe en $(x_0, y_0)$ avec une vitesse $V_0$ est donnée par :
 
-$$
-\left\{
-\begin{array}{l}
-x = \frac{V_0}{\omega} \sin(\omega t) \\
-y = 0
-\end{array}
-\right.
-$$
+avec ![](https://math.now.sh?from=g) l'accélération de la pesanteur et ![](https://math.now.sh?from=L) la longueur du fil. On observe donc que la masse du pendule n'influence pas la période d'oscillation.
+
+Une solution de ce système d'équations pour l'instant initial ![](https://math.now.sh?from=t=0), lorsque le pendule passe en ![](https://math.now.sh?from=(x_0,y_0)) avec une vitesse ![](https://math.now.sh?from=V_0) est donnée par :
+
+![](https://math.now.sh?from=%5Cleft%5C%7B%5Cbegin%7Barray%7D%7Bl%7Dx=%5Cfrac%7BV_0%7D%7B%5Comega%7D%5Csin(%5Comega%20t)%5C%5Cy=0%5Cend%7Barray%7D%5Cright.%0A)
+
 
 Si l'in intègre la rotation de la Terre par rapport à un référentiel galiléen, il faut tenir compte des forces induites par la rotation de la Terre. Parmis ces dernières, l'accélération de Coriolis qui s'écrit :
 
-$$
--2 \Omega \left( \vec{k} \times \vec{V} \right)
-$$
+![](https://math.now.sh?from=-2\Omega\left(\vec{k}\times\vec{V}\right))
 
-où $\vec{v}$ est la vitesse du pendule par rapport à la Terre, et $\vec{k}$ est le vecteur unitaire porté par l'axe de rotation terrestre. Quant à $\Omega$, il représente la vitesse de rotation angulaire de la Terre (à savoir un tour en un jour sidéral).
 
-Un jour sidéral est égal à $86164.09054$ secondes, soit une journée sidérale de $23$ heures, $56$ minutes et $4$ secondes.
+où ![](https://math.now.sh?from=\vec{v}) est la vitesse du pendule par rapport à la Terre, et ![](https://math.now.sh?from=\vec{k}) est le vecteur unitaire porté par l'axe de rotation terrestre. Quant à ![](https://math.now.sh?from=\Omega), il représente la vitesse de rotation angulaire de la Terre (à savoir un tour en un jour sidéral).
 
-En utilisant la notation complexe $z = x + i y$, on peut réécrire l'équation du mouvement du pendule de Foucault en intégrant la force de Coriolis :
+Un jour sidéral est égal à ![](https://math.now.sh?from=86164.09054) secondes, soit une journée sidérale de ![](https://math.now.sh?from=23) heures, ![](https://math.now.sh?from=56) minutes et ![](https://math.now.sh?from=4) secondes.
 
-$$
-z(t) = \exp^{-i \Omega \sin(\theta t)} \left[ z_0 \left(\cos(\omega_0 t) + i \frac{\Omega \sin \theta}{\omega_0} \sin(\omega_0 t)\right) + \frac{\dot{z_0}}{\omega_0} \sin(\omega_0 t) \right]
-$$
+En utilisant la notation complexe ![](https://math.now.sh?from=z=x+iy)
+, on peut réécrire l'équation du mouvement du pendule de Foucault en intégrant la force de Coriolis :
 
-Ainsi, si la vitesse initiale $\dot{z_0}$ est nulle, le pendule de Foucault oscille en un plan fixe. Si la vitesse initiale est non nulle, le plan d'oscillation du pendule tourne à une vitesse angulaire $\Omega \sin(\theta)$.
+![](https://math.now.sh?from=z(t)=\exp^{-i\Omega\sin(\theta t)}\left[z_0\left(\cos(\omega_0t)+i\frac{\Omega\sin\theta}{\omega_0}\sin(\omega_0t)\right)+\frac{\dot{z_0}}{\omega_0}\sin(\omega_0t)\right])
+
+
+Ainsi, si la vitesse initiale ![](https://math.now.sh?from\dot{z_0}) est nulle, le pendule de Foucault oscille en un plan fixe. Si la vitesse initiale est non nulle, le plan d'oscillation du pendule tourne à une vitesse angulaire ![](https://math.now.sh?from\Omega\sin\theta)).
 
 ## Un pendule fixe, mais par rapport à quel système de référence ? <!-- {docsify-ignore} -->
 
 Le pendule de Foucault pose la question de la nature du repère qui sert de référence. En effet, tout mouvement est relatif. Si la Terre est en rotation, elle l'est par rapport à quelque chose ; on ne peut pas parler d'un mouvement sans définir un cadre de référence. Dans la physique classique non-relativiste, donc avec métrisation euclidienne (voir l'équation ci-dessus), on fait l'hypothèse que le pendule oscille dans un plan fixe dans le référentiel galiléen (inertiel pour ce qui concerne les rotations).
 
-Les mesures montrent que les étoiles distantes semblent former, en première approximation, un référentiel par rapport auquel le plan d'oscillation du pendule paraît être fixe, donc, en première approximation, le repère galiléen peut être lié aux étoiles distantes, et donc, dans l'équation précédente, la Terre tourne autour de son axe avec $\Omega$, égale à la vitesse de rotation sidérale.
+Les mesures montrent que les étoiles distantes semblent former, en première approximation, un référentiel par rapport auquel le plan d'oscillation du pendule paraît être fixe, donc, en première approximation, le repère galiléen peut être lié aux étoiles distantes, et donc, dans l'équation précédente, la Terre tourne autour de son axe avec ![](https://math.now.sh?from\Omega), égale à la vitesse de rotation sidérale.
 
 Mais comment est défini exactement ce référentiel ? Qu'a-t-il de particulier pour que le pendule reste fixe par rapport à celui-ci et pas un autre ? Cette question reste toujours sujette à controverse12.
 
