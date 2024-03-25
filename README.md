@@ -58,7 +58,7 @@ Un jour sidéral est égal à ![](https://math.now.sh?from=86164.09054) secondes
 En utilisant la notation complexe ![](https://math.now.sh?from=z=x+iy)
 , on peut réécrire l'équation du mouvement du pendule de Foucault en intégrant la force de Coriolis :
 
-![](https://math.now.sh?from=z(t)=\exp^{-i\Omega\sin(\theta t)}\left[z_0\left(\cos(\omega_0t)+i\frac{\Omega\sin\theta}{\omega_0}\sin(\omega_0t)\right)+\frac{\dot{z_0}}{\omega_0}\sin(\omega_0t)\right])
+![](https://math.now.sh?from=z(t)=\exp^{-i\Omega\sin(\thetat)}\left[z_0\left(\cos(\omega_0t)+i\frac{\Omega\sin\theta}{\omega_0}\sin(\omega_0t)\right)+\frac{\dot{z_0}}{\omega_0}\sin(\omega_0t)\right])
 
 
 Ainsi, si la vitesse initiale ![](https://math.now.sh?from\dot{z_0}) est nulle, le pendule de Foucault oscille en un plan fixe. Si la vitesse initiale est non nulle, le plan d'oscillation du pendule tourne à une vitesse angulaire ![](https://math.now.sh?from\Omega\sin\theta)).
